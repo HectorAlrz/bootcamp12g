@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: hsl(233, 47%, 7%);
+    font-size: 15px;
+}
+
+section{
+    float: left;
+    border-radius: 9px;
+    background-color: hsl(244, 38%, 16%);
+    padding: 15px;
+    width: 50%;
+}
+
+
+.title{
+    color: hsl(0, 0%, 100%);
+}
+
+h1 span {
+    color: hsl(277, 64%, 61%);
+}
+
+.paragraph{
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.clarito{
+   color: hsla(0, 0%, 100%, 0.6) 
+}
+
+img {
+    border-radius: 9px;
+}
+
+.imagen{
+    float:right;
+    width: 50%;
+}
