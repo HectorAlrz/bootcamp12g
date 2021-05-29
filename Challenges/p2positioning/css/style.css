@@ -1,0 +1,62 @@
+html,body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(128, 128, 128, 0.433);
+    margin: 0px;
+}
+
+/*We define the stats of the main */
+main{
+    border: 3px black;
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+    background-color: rgb(150, 144, 144);
+}
+/*We define the stats of the circle */
+.circle{
+    background-color:rgb(0, 26, 255) ;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    border: black;
+    position: absolute;
+}
+
+/*We define the position of each circle*/
+.circle-top{
+    top:20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.circle-right{
+    top:50%;
+    right:20px;
+    transform: translateY(-50%);
+}
+.circle-bot{
+    bottom:20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.circle-left{
+    left: 20px;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+/*We define the position of the square*/
+.square{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 43%;
+    transform: translateY(-50%);
+    position: absolute;
+    background-color: black;
+}
