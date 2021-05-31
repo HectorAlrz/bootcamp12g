@@ -1,0 +1,48 @@
+:root{
+    --bgcolor:#464962;
+    --gastly-background: #3A3434;
+    --gastly-shine: #635759;
+    --gastly-border: #3b343b;
+    --gastly-size: 225px;
+    --custom-border:
+    drop-shadow(0 -5px var(--gastly-border))
+    drop-shadow(0 5px 0 var(--gastly-border))
+    drop-shadow(5px 0 0 var(--gastly-border))
+    drop-shadow(-5px 0 var(--gastly-border));
+}
+
+html,
+body,
+
+.container{
+    height: 100vh;
+    background: var(--bgcolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.gastly-container{
+    width: var(--gastly-size);
+    height: var(--gastly-size);
+    filter: var(--custom-border);
+}
+
+.gastly{
+    background: var(--gastly-shine);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    clip-path: polygon(65% 0, 90% 20%, 100% 45%, 90% 80%, 65% 100%, 35% 100%, 10% 80%, 0 45%, 10% 20%, 35% 0);
+}
+
+.gastly-shadow{
+    width: 100%;
+    height: 100%;
+    background: var(--gastly-background);
+    overflow: hidden;
+    clip-path: polygon(65% 0, 90% 20%, 100% 45%, 90% 80%, 65% 100%, 35% 100%, 10% 80%, 0 45%, 10% 20%, 35% 0);
+    transform: translate(0, 15px) scale(1);
+}
