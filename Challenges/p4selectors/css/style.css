@@ -1,41 +1,39 @@
-*{
-    background: rgb(137, 132, 132);
+* {
+  background: rgb(137, 132, 132);
 }
 
-.animation{
-    margin-top: 20%;
-    display: flex;
-    justify-content: center;
+.animation {
+  margin-top: 20%;
+  display: flex;
+  justify-content: center;
 }
 
-#wiggle{
-    top: 40%;
-    height:50px;
-    width: 50px;
-    background: red;
+#wiggle {
+  position: absolute;
+  top: 40%;
+  height: 50px;
+  width: 50px;
+  background: red;
 }
 
-@keyframes full-rotation{
-    0% {
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg)
-    }
+@keyframes full-rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-
-form input#activate:checked + #cajita::after{
-    content:"Desactivate";
+form input#activate:checked + #cajita::after {
+  content: "Desactivate";
 }
 
 form input#activate:not(:checked) + #cajita::after {
-    content:"Activate";
-    top: 40%;
-
+  content: "Activate";
 }
 
-form input#activate:checked + #wiggle{
-    transform: rotate(0deg);
-    animation: full-rotation 5s infinite linear;
+form input#activate:checked ~ #wiggle {
+  transform: rotate(0deg);
+  animation: full-rotation 5s infinite linear;
 }
