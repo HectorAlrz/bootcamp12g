@@ -8,8 +8,8 @@ html,body{
 /*We define the stats of the main */
 main{
     border: 3px black;
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     margin-left: auto;
     margin-right: auto;
     top: 50%;
